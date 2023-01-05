@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>{% block title %} {% endblock %} </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <div class="menu-bar">
+  
+        <a href="{{  url_for('hello')  }}"><div class="logo"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo"></a>
+
+        </div>
+    
+    
+    
+        <ul>
+            <li class="active" ><a href="abc.html">Home</a></li>
+            <li><a href="{{  url_for('about')  }}">About Us</a></li>
+            <li><a href="demo.html">Demo Photos
+                Videos</a></li>
+            
+            <li><a href="service.html">Services</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="segment.html">Word Segmentation</a></li>
+                        <li><a href="{{  url_for('textrecognition')  }}">Text Recognition</a></li>
+                    </ul>
+                </div>
+            
+                
+            </li>    
+            
+        </ul>
+    </div>  
+</head>
+<body>
+    
+        {% block content %} {% endblock %}
+</body>
+</html>

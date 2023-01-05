@@ -1,0 +1,116 @@
+*
+{
+
+    padding:0;
+    margin:0 ;
+}
+body{
+   
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+
+}
+.menu-bar{
+    background:rgb(0, 0,100) ;
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: medium;
+
+}
+.active,.menu-bar ul li:hover{
+    background:red;
+    border-radius: 10px;
+    text-align: center;
+    font-size: medium;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(19, 5, 146);
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    border-radius: 0;
+    background: transparent;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #B2B2D0;
+
+}
+.bimg{
+    width: 101%;
+    background-size: cover;
+    background-position: center;
+   height: 100%;
+  background-color: rgb(106, 106, 180);
+}
+.bimg img{
+margin-left: -10%;
+width: 50%;
+height: 86%;
+}
+
+.logo{
+    flex-basis: 20%;
+    font-size: 0;
+    border-radius: 50%;
+    margin-top: 25px;
+  }
+.logo img{
+    height: auto;
+    width: auto;
+    max-width: 40%;
+    overflow: hidden;
+    border-radius: 10%;
+  }
+.bimg, .content{
+    display:inline-flex;
+
+}
+.content{
+    margin-top: 7%;
+    color: white;
+}

@@ -1,0 +1,7 @@
+
+HindiSeg/train/10/259/9.jpg उषा
+HindiSeg/train/10/259/5.jpg विकिपीडिया
+HindiSeg/train/10/259/27.jpg भगवत्स्वरूप
+HindiSeg/train/10/259/28.jpg लम्हा
+HindiSeg/train/10/259/33.jpg मेक
+HindiSeg/train/10/204/7.jpg वीएलएसआई

@@ -1,0 +1,277 @@
+{
+
+    padding:0;
+    margin:0:
+}
+body{
+   
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;}
+.menu-bar{
+    background:rgb(0, 0,100) ;
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active,.menu-bar ul li:hover{
+    background:red;
+    border-radius: 10px;
+    text-align: center;
+    font-size: medium;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(19, 5, 146);
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    border-radius: 0;
+    background: transparent;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+
+}
+.bimg{
+    width: 101%;
+    background-size: cover;
+    background-position: center;
+   height: 100%;
+  background-color: rgb(106, 106, 180);
+}
+.bimg img{
+margin-left: 25.5%;
+width: 50%;
+height: 86%;
+}
+
+.logo{
+    flex-basis: 20%;
+    font-size: 0;
+    border-radius: 50%;
+    margin-top: 25px;
+  }
+.logo img{
+    height: auto;
+    width: auto;
+    max-width: 40%;
+    overflow: hidden;
+    border-radius: 52%;
+  }
+  /* body{
+    margin: 0;
+    padding: 0%;
+}
+#containner{
+width: 960px;
+margin: 0 auto ;
+
+}
+.col1{
+width: 450px;
+float: left;
+background-color: red;
+margin: 10px;
+color: white;
+
+
+}
+.col2{
+width: 450px;
+float: left;
+background-color: blue;
+margin: 10px;
+color: white;
+} */
+/* .columns {
+    display: grid;
+    grid-template-columns: 50% 50%;	
+  } */
+  /* {
+    box-sizing: border-box;
+} */
+/* Set additional styling options for the columns*/
+.column1 {
+float: left;
+width: 49%;
+background-color: aliceblue;
+
+}
+.column2 {
+    float: right;
+    width: 49%;
+    background-color: aqua;
+ }
+    
+
+.row{
+    margin-top: 0px; 
+    column-gap: 40%; 
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+
+}
+.photo1{
+    display:block;
+    column-gap: 500px;
+
+
+
+}
+.photo2{
+    display:block;
+    column-gap: 500px;
+    margin-left: 20%;
+}
+/* .btn{
+    border: 1px solid #3498db;
+    background-color: rgb(78, 76, 76);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 160px;
+    border-radius: 5%;
+
+
+}
+.btn:hover{
+    background-color:rgba(12, 10, 10, 0.13);
+    
+} */
+/* .button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border: none;
+} */
+/* .text{
+
+background-color: #b2ff00;
+    color: #000;
+    text-align: center;
+    border-style:solid;
+ border-color:#287EC7;
+ font-size: large;
+ font-family: Arial, Helvetica, sans-serif;
+ width: 50%;
+   
+
+}
+.text:hover{
+    width: 50%;
+} */
+#segment{
+width:16%;
+height: 5%;
+/* margin-bottom: 10px; */
+ /* margin-left: 40px; */
+border-radius: 15px;
+border:none;
+font-size: 120%;
+background-color: rgb(6, 167, 248);
+transition: width 0.2s ease-out;
+margin-left:12%;
+}
+#segment:hover{
+cursor:pointer;
+width:17%;
+background-color: dimgray;
+}
+#segments{
+    margin-top:15%;
+    height:5%;
+    width:25%;
+    margin-bottom: 20px;
+     /* margin-left: 40px; */
+    border-radius: 15px;
+    border:none;
+    font-size: 120%;
+    background-color: rgb(248, 6, 6);
+    transition: width 0.2s ease-out;
+    margin-left: 40%;
+    }
+#segments:hover{
+        cursor:pointer;
+        width:24%;
+        background-color: rgb(9, 190, 90);
+        }
+.con{
+    background-color:white;
+    width: auto;
+}
+.row p{
+    text-align: justify;
+    background-color: whitesmoke;
+}

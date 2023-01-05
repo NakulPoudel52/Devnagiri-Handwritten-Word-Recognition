@@ -1,0 +1,71 @@
+
+{% extends 'base.html' %}
+
+{% block title %} Word recognition {% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/word_recognition.css') }}">
+
+    <h2>Select a file to upload</h2>
+    <p>
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+      {% endwith %}
+    </p>
+    {% if filename %}
+      <div>
+        <img src="{{ url_for('display_image', filename=filename) }}">
+        <p>{{filename}}</p>
+      </div>
+    {% endif %}
+    {% if recognized %}
+    <P>Recognized text is;</P>
+    <p>{{recognized}}</p>
+    {% endif %}
+    <form method="post" action="/upload/" enctype="multipart/form-data">
+        <dl>
+        <p>
+          <input type="file" name="file" autocomplete="off" required>
+        </p>
+        </dl>
+        <p>
+        <input type="submit" value="Submit">
+      </p>
+    </form>
+    
+{% endblock %}
+
+{# 
+{% block content %}
+
+
+  
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/word_recognition.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <form method="post" action="/upload/" enctype="multipart/form-data">
+      <div class="drag-area">
+
+        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <header>Drag & Drop to Upload File</header>
+        <span>OR</span>
+        <button>Browse File</button>
+        <input type="file" hidden>
+      </div>
+  
+ <!-- <div class="button"> -->
+    <button class="copytext">Upload</button>
+  </form>
+  <!-- </div> -->
+
+  <script src="{{ url_for('static', filename='js/word_recognition.js') }}"></script> 
+
+  {% endblock %}
+  #}  
